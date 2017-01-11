@@ -1,6 +1,6 @@
 # cells-skeleton-demo
 
-Your component description.
+This component shows a way to display or not the skeleton.
 
 Example:
 ```html
