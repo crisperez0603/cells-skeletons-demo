@@ -1,0 +1,55 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<link rel="import" href="cells-skeleton-demo-styles.html">
+<link rel="import" href="../cells-skeleton-group/cells-skeleton-group.html">
+<link rel="import" href="../cells-skeleton-custom/cells-skeleton-custom.html">
+<link rel="import" href="../cells-skeleton-item-account/cells-skeleton-item-account.html">
+<link rel="import" href="../cells-skeleton-item-last-movement/cells-skeleton-item-last-movement.html">
+<link rel="import" href="../cells-skeleton-item-account-transfer/cells-skeleton-item-account-transfer.html">
+
+<!--
+`<cells-skeleton-demo>` This component shows a way to display or not the skeleton.
+
+Example:
+
+```html
+<cells-skeleton-demo></cells-skeleton-demo>
+```
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Custom property | Description     | Default        |
+|:----------------|:----------------|:--------------:|
+| --cells-skeleton-demo-scope      | scope description | default value  |
+| --cells-skeleton-demo  | empty mixin     | {}             |
+
+@demo demo/index.html
+-->
+<dom-module id="cells-skeleton-demo">
+  <template>
+    <style include="cells-skeleton-demo-styles cells-skeleton-demo-shared-styles"></style>
+<!--
+    <h1>Skeleton group</h1>
+    <cells-skeleton-group></cells-skeleton-group> -->
+
+    <template is="dom-if" if="[[!_hideSkeleton]]">
+        <div class="skeleton-container" id="skeletonContainer">
+          <h1>Skeleton custom</h1>
+          <cells-skeleton-custom hide-box-shadow="true">
+            <cells-skeleton-item-account></cells-skeleton-item-account>
+            <cells-skeleton-item-account-transfer></cells-skeleton-item-account-transfer>
+            <cells-skeleton-item-last-movement></cells-skeleton-item-last-movement>
+          </cells-skeleton-custom>
+        </div>
+      </template>
+
+      <template is="dom-if" if="[[_hideSkeleton]]">
+        <h1>data results</h1>
+      </template>
+
+    <content></content>
+  </template>
+  <script src="cells-skeleton-demo.js"></script>
+</dom-module>

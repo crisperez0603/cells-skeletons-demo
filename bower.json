@@ -1,0 +1,23 @@
+{
+  "name": "cells-skeleton-demo",
+  "version": "1.0.0",
+  "description": "Your component description",
+  "keywords": [],
+  "ignore": [],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0",
+    "cells-skeleton-group": "ssh://git@globaldevtools.bbva.com:7999/bgcm/cells-skeleton-group.git#^1.0.4",
+    "cells-skeleton-custom": "ssh://git@globaldevtools.bbva.com:7999/bgcm/cells-skeleton-custom.git#^1.1.1"
+  },
+  "devDependencies": {
+    "cells-sass": "ssh://git@globaldevtools.bbva.com:7999/cel/cells-sass.git#^2.0.0",
+    "cells-demo-mobile": "ssh://git@globaldevtools.bbva.com:7999/cel/cells-demo-mobile.git#^1.2.10",
+    "cells-glomo-theme": "ssh://git@globaldevtools.bbva.com:7999/tp/cells-glomo-theme.git#^4.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^4.0.0",
+    "theme-base": "ssh://git@globaldevtools.bbva.com:7999/ct/theme-base.git#^3.0.5"
+  },
+  "main": [
+    "cells-skeleton-demo.html"
+  ]
+}

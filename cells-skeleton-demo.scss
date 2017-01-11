@@ -1,0 +1,17 @@
+@import "bower_components/cells-sass/main";
+
+:host {
+  display: block;
+  font-family: var(--cells-fontDefault, 'sans-serif');
+  box-sizing: border-box;
+
+  @apply(--cells-skeleton-demo);
+}
+
+:host([hidden]) {
+  display:none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
